@@ -15,10 +15,11 @@ export class AppComponent {
   title = "ZJ";
   id = "tsparticles";
   particlesUrl = '../assets/particles_config.json'
-
-
-
-
+  count = 0;
+  particlesSpeed: number = 2;
+ 
+  
+  //#region 
 
   // constructor(private elementRef: ElementRef) { }
 
@@ -36,11 +37,12 @@ export class AppComponent {
   //   this.elementRef.nativeElement.style.transform = 'none';
   // }
 
+  //#endregion
 
   particlesOptions = {
     background: {
       color: {
-        value: "#0d074a",
+        value: "#0d102a",
       },
     },
     fpsLimit: 120,
@@ -60,15 +62,15 @@ export class AppComponent {
         push: {
           quantity: 1,
         },
-        repulse: {
+        attract: {
           distance: 200,
-          duration: 0.4,
+          duration: 1,
         },
       },
     },
     particles: {
       color: {
-        value: "#ff00ff",
+        value: "#ffffff",
       },
       links: {
         color: "#ff007f",
@@ -78,13 +80,13 @@ export class AppComponent {
         width: 1,
       },
       move: {
-        direction: MoveDirection.none,
+        direction: MoveDirection.top,
         enable: true,
         outModes: {
-          default: OutMode.bounce,
+          default: OutMode.out,
         },
         random: false,
-        speed: 2,
+        speed: this.particlesSpeed,
         straight: false,
       },
       number: {
@@ -101,25 +103,23 @@ export class AppComponent {
         type: "circle",
       },
       size: {
-        value: { min: 1, max: 3 },
+        value: { min: 0, max: 0 }
       },
     },
     detectRetina: true,
   };
 
-  particlesLoaded(container: Container): void {
-    console.log(container);
+  async particlesInit(engine: Engine): Promise<void> {
+    await loadSlim(engine);
   }
 
-  async particlesInit(engine: Engine): Promise<void> {
-    console.log(engine);
 
-    // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    //await loadFull(engine);
-    await loadSlim(engine);
+
+
+
+
+
+
+
+
 }
-}
-
-

@@ -1,29 +1,15 @@
+<div class="particles-container">
+  <ng-particles [id]="id" [options]="particlesOptions" [particlesInit]="particlesInit" class="ng-particles">
+  </ng-particles>
+  <div class="content">
+    <ngx-typed-js [strings]="['Zura Jeladze.', 'Web Developer.', 'Angular Developer.', 'happy to see you here.']"
+      [backSpeed]="30" [backDelay]="1000" [typeSpeed]="50" [startDelay]="50" [loop]="true">
+      <h1 style="color: #f22;">I am <span class="typing" style="color: #f11;"></span></h1>
+    </ngx-typed-js>
+    <h1 [countUp]="100" [options]="{ enableScrollSpy: true, suffix: '%', scrollSpyOnce: true }">0</h1>
 
-<!-- 
-  <h1 [countUp]="100" [options]="{ enableScrollSpy: true, suffix: '%', scrollSpyOnce: true }">0</h1>
-  
-  <h1>vaaaa</h1> vax
-  <app-test></app-test>
-  
-  
-  <div class="card">
-    <h2>CARD</h2>
-  </div> -->
-  
-  
-  
-  <!-- 
-    <div class="card">
-      <div class="bg"></div>
-    </div> -->
-    
-    <ng-particles
-    [id]="id"
-    [options]="particlesOptions"
-    [particlesInit]="particlesInit"
-    (particlesLoaded)="particlesLoaded($event)"
-    ></ng-particles>
-    
-    <!-- <ngx-typed-js [strings]="['Zura Jeladze.', 'Web Developer.', 'Angular Developer.', 'happy to see you here.']" [backSpeed]="30" [backDelay]="1000"  [typeSpeed]="50" [startDelay]="50" [loop]="true">
-      <h1>I am <span class="typing"></span></h1>
-    </ngx-typed-js> -->
+    <app-test></app-test>
+
+
+  </div>
+</div>

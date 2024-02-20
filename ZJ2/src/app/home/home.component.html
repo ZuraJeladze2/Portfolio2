@@ -1,17 +1,15 @@
 <div class="particles-container">
   <ng-particles [id]="id" [options]="particlesOptions" [particlesInit]="particlesInit" class="ng-particles">
   </ng-particles>
-  
+
   <div class="content">
-      <ngx-typed-js [strings]="['Zura Jeladze.', 'Web Developer.', 'Angular Developer.', 'happy to see you here.']"
-        [backSpeed]="30" [backDelay]="1000" [typeSpeed]="50" [startDelay]="50" [loop]="true">
-        <div class="greet">
-          <h3>Hello,</h3>
-          <h1 class="Iam">I am <span class="typing"></span></h1>
-        </div>
-      </ngx-typed-js>
+    <div class="section1">
+      <app-navbar></app-navbar>
+      <app-typed></app-typed>
+    </div>
 
-      <!-- <app-skills></app-skills> -->
-
+    <div class="section2">
+      <app-skills></app-skills>
     </div>
   </div>
+</div>

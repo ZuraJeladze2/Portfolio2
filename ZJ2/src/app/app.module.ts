@@ -10,6 +10,8 @@ import {CountUpModule} from 'ngx-countup';
 import { HomeComponent } from './home/home.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { TypedComponent } from './typed/typed.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ExperienceComponent } from './experience/experience.component';
     TestComponent,
     HomeComponent,
     SkillsComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    TypedComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

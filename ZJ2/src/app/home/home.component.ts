@@ -12,8 +12,7 @@ export class HomeComponent {
 
   id = "tsparticles";
   particlesUrl = '../assets/particles_config.json'
-  count = 0;
-  particlesSpeed: number = 1;
+  particlesSpeed: number = 1
  
   
   //#region 
@@ -47,7 +46,7 @@ export class HomeComponent {
       events: {
         onClick: {
           enable: true,
-          mode: ClickMode.push,
+          mode: ClickMode.repulse
         },
         onHover: {
           enable: true,
@@ -59,9 +58,13 @@ export class HomeComponent {
         push: {
           quantity: 1,
         },
+        repulse: {
+          distance: 250,
+          duration: .4
+        },
         attract: {
           distance: 200,
-          duration: 1,
+          duration: .2
         },
       },
     },
@@ -89,12 +92,12 @@ export class HomeComponent {
       number: {
         density: {
           enable: true,
-          area: 2500,
+          area: 800,
         },
-        value: 80,
+        value: 70,
       },
       opacity: {
-        value: .5,
+        value: .2,
       },
       shape: {
         type: "circle",

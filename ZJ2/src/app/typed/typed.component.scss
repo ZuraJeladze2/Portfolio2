@@ -1,0 +1,41 @@
+.greet {
+  margin-left: 150px;
+  margin-top: 250px;
+}
+
+.Iam {
+  font-size: 4rem;
+}
+
+.typing {
+  border-bottom: 3px solid white;
+  background: linear-gradient(-90deg, #f60, white);
+  padding: 7px;
+  color: transparent;
+  // animation: wow 6s infinite ease-in-out;
+  background-clip: text;
+  background-size: 800px;
+  // color: #0fa;
+}
+
+@keyframes wow {
+  0% {
+    background: linear-gradient(-90deg, #f60, white);
+    background-clip: text;
+  }
+
+  25% {
+    background: linear-gradient(-90deg, #6f0, white);
+    background-clip: text;
+  }
+
+  50% {
+    background: linear-gradient(-90deg, #0fa, white);
+    background-clip: text;
+  }
+
+  100% {
+    background: linear-gradient(-90deg, rgb(0, 234, 255), white);
+    background-clip: text;
+  }
+}

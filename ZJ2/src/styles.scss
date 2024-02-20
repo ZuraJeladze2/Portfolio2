@@ -3,7 +3,7 @@
    v5.0.1 | 20191019
    License: none (public domain)
 */
-
+@import url(assets/fonts/fonts.css);
 :root{
 	--text-color: white;
 }
@@ -25,7 +25,8 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	color: var(--text-color);
-	font-family: serif;
+	font-family: strike;
+	font-weight: normal;
 	vertical-align: baseline;
     scrollbar-width: none;
 	scroll-behavior: smooth;

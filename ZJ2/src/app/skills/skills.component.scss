@@ -1,3 +1,60 @@
-.bg{
+.bg {
     padding-top: 20px;
+}
+
+swiper-container {
+    width: 100vw;
+    height: 100vh;
+    // swiper-slide{
+    //     background: #000;
+    //     width: 100vw;
+    //     height: 100vh;
+
+    // }
+    swiper-slide{
+        border: 5px solid #f00;
+    }
+}
+
+.horizontal-scroll {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 0;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: visible;
+    // white-space: nowrap;
+    // background: linear-gradient(90deg, red, green);
+}
+
+.skill1 {
+    min-width: 100vw;
+    height: 100vh;
+    background: #f00;
+}
+
+.skill2 {
+    min-width: 100vw;
+    height: 100vh;
+    background: #f0f;
+}
+
+.skill3 {
+    min-width: 100vw;
+    height: 100vh;
+    background: #ff0;
+}
+
+.skill4 {
+    min-width: 100vw;
+    height: 100vh;
+    background: #0ff;
+}
+.experience{
+    width: 100vw;
+    height: 200vh;
+    background: linear-gradient(red, yellow);
 }

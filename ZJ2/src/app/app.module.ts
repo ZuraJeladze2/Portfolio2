@@ -1,5 +1,5 @@
 import { NgParticlesModule } from "ng-particles";
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +12,9 @@ import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { TypedComponent } from './typed/typed.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { NgTiltModule } from "@geometricpanda/angular-tilt";
+import { register } from 'swiper/element/bundle';
+register();
 
 @NgModule({
   declarations: [
@@ -28,9 +31,12 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppRoutingModule,
     NgxTypedJsModule,
     CountUpModule,
-    NgParticlesModule 
+    NgParticlesModule,
+    NgTiltModule,
+    
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

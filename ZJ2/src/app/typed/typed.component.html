@@ -1,7 +1,7 @@
 <ngx-typed-js [strings]="['Zura Jeladze.', 'Web Developer.', 'Angular Developer.', 'happy to see you here.']"
     [backSpeed]="30" [backDelay]="1000" [typeSpeed]="50" [startDelay]="50" [loop]="true">
-    <div class="greet">
+    <div class="greet" ngTilt perspective="500" speed="800">
         <h3>Hello,</h3>
-        <h1 class="Iam">I am <span class="typing"></span></h1>
+        <h1 class="Iam">I am <span class="typing" ngTiltParallax distance="20"></span></h1>
     </div>
 </ngx-typed-js>

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import Swiper from 'swiper';
 
 @Component({
   selector: 'app-skills',
@@ -7,4 +8,25 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent {
 
+  doc: Window = window;
+
+  @HostListener( 'window:scroll', ['$event']) onScroll(event: Event): void {
+    if(window.scrollY > window.innerHeight) {
+      console.log(window.scrollY);
+      
+    }  
+  }
+  
+  ngAfterViewInit(){
+    const mySwiper = new Swiper('.swiper', {
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+      mousewheel: {releaseOnEdges: true},
+    })
+
+
+    
+  }
 }

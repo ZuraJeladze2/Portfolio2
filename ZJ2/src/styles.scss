@@ -6,6 +6,7 @@
 @import url(assets/fonts/fonts.css);
 :root{
 	--text-color: white;
+	--skills-width: 200vw;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -28,7 +29,7 @@ time, mark, audio, video {
 	font-family: strike;
 	font-weight: normal;
 	vertical-align: baseline;
-    // scrollbar-width: none;
+    scrollbar-width: none;
 	scroll-behavior: smooth;
 	user-select: none;
 }

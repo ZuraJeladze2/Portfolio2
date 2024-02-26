@@ -1,17 +1,40 @@
 .bg {
-    padding-top: 20px;
+    // padding-top: 20px;
+    height: var(--skills-width);
 }
+
+
+.viewport{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: radial-gradient(transparent, black);
+}
+
+.testDiv {
+    width: var(--skills-width);
+    height: 200px;
+    background: radial-gradient( lime 1%, red, yellow);
+    position: absolute;
+    top: 100vh;
+    z-index: 2;
+}
+
+
+
 
 swiper-container {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     // swiper-slide{
     //     background: #000;
     //     width: 100vw;
     //     height: 100vh;
 
     // }
-    swiper-slide{
+    swiper-slide {
         border: 5px solid #f00;
     }
 }
@@ -53,7 +76,8 @@ swiper-container {
     height: 100vh;
     background: #0ff;
 }
-.experience{
+
+.experience {
     width: 100vw;
     height: 200vh;
     background: linear-gradient(red, yellow);

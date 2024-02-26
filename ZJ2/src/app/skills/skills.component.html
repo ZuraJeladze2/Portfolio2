@@ -1,23 +1,22 @@
 <div class="bg">
-      <span>HTML </span>
+      <!-- <span>HTML</span>
       <span [countUp]="100" [options]="{ enableScrollSpy: true, suffix: '%', scrollSpyOnce: true }">0</span>
-      <app-experience></app-experience>
+      <app-experience></app-experience> -->
 
-      <swiper-container class="swiper" mousewheel="true" snap="false">
-            <swiper-slide>Slide 1</swiper-slide>
-            <swiper-slide>Slide 2</swiper-slide>
-            <swiper-slide>Slide 3</swiper-slide>
-      </swiper-container>
+      <div class="viewport">
+      </div>
+      <div class="testDiv" #testDiv></div>
 
-      <!-- <div class="horizontal-scroll">
-            <div class="skill1"></div>
-            <div class="skill2"></div>
-            <div class="skill3"></div>
-            <div class="skill4"></div>
-            <div class="skill5">
-                  <div class="experience"></div>
-            </div>
-      </div> -->
-      
-      
+      <!-- <swiper-container class="mySwiper swiper-h" mousewheel="true" free-mode="true">
+            <swiper-slide>Horizontal Slide 1</swiper-slide>
+            <swiper-slide>
+                  <swiper-container class="mySwiper2 swiper-v" mousewheel="true" direction="vertical" free-mode="true">
+                        <swiper-slide>Vertical Slide 1</swiper-slide>
+                        <swiper-slide>Vertical Slide 2</swiper-slide>
+                        <swiper-slide>Vertical Slide 3</swiper-slide>
+                        <swiper-slide>Vertical Slide 4</swiper-slide>
+                        <swiper-slide>Vertical Slide 5</swiper-slide>
+                  </swiper-container>
+            </swiper-slide>
+      </swiper-container> -->
 </div>

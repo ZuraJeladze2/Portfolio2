@@ -14,6 +14,7 @@ import { TypedComponent } from './typed/typed.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NgTiltModule } from "@geometricpanda/angular-tilt";
 import { register } from 'swiper/element/bundle';
+import { ScrollHComponent } from './scroll-h/scroll-h.component';
 register();
 
 @NgModule({
@@ -24,7 +25,8 @@ register();
     SkillsComponent,
     ExperienceComponent,
     TypedComponent,
-    NavbarComponent
+    NavbarComponent,
+    ScrollHComponent
   ],
   imports: [
     BrowserModule,

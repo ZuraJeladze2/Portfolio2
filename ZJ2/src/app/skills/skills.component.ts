@@ -7,21 +7,21 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 })
 export class SkillsComponent {
 
-  scrollY: number | undefined;
-  @ViewChild('testDiv') testDiv!: ElementRef;
+  // scrollY: number | undefined;
+  // @ViewChild('testDiv') testDiv!: ElementRef;
 
   
-  @HostListener('window:scroll', ['$event'])
-  horizontalScroll(event: any) {
-    this.scrollY = window.scrollY
+  // @HostListener('window:scroll', ['$event'])
+  // horizontalScroll(event: any) {
+  //   this.scrollY = window.scrollY
 
-    if (this.testDiv.nativeElement.style.top === 0) {
-      console.log('hi');
+  //   if (this.testDiv.nativeElement.style.top === 0) {
+  //     console.log('hi');
 
-    }
-    console.log(window.getComputedStyle(this.testDiv.nativeElement).getPropertyValue('top'))
+  //   }
+  //   console.log(window.getComputedStyle(this.testDiv.nativeElement).getPropertyValue('top'))
 
     // console.log(this.testDiv);
     // console.log(this.scrollY);
-  }
+  // }
 }

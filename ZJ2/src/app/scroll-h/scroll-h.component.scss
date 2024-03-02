@@ -1,0 +1,41 @@
+section {
+    height: 100vh;
+}
+
+main{
+    background: radial-gradient(blue, red);
+}
+
+.container {
+    padding: 5rem;
+}
+
+.sticky-parent {
+    height: 500vh;
+}
+
+.sticky{
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.scroll-x{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 500vw;
+    will-change: transform;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    background: linear-gradient(90deg, yellow, orange);
+}
+
+.item{
+    width: 500px;
+    height: 400px;
+    background: red;
+}
